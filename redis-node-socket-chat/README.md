@@ -13,7 +13,26 @@ The Installation process assumes that you already have the above technologies in
 
 ## Install
 
+Give download link here
 
+Navigate to the folder and run:
 
-- Write Install instructions here
-- Link to blog post
+```
+npm install
+```
+
+To start the server, you can run:
+
+```
+npm start
+```
+
+The server should start at port 8080 (default). Navigate to [http://localhost:8080](http://localhost:8080) to see the demo.
+
+Although, before doing that, you might want to flush the DB and start with 0 users.
+
+For that, you can uncomment the line in `index.js` that says `client.flushdb();`
+
+Once that is done, you are ready to go. Remember to restart the server if you intend to make any changes to the code.
+
+You can also use something like [nodemon](https://nodemon.io/) to watch your files and restart the server automatically!
