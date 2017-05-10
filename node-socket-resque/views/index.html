@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Using Resque queues with NodeJS + Redis + Socket.io</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h2>Visualizing Resque usage using Node.js, Websockets and Redis</h2>
+            </div><br />
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                <h3 class="panel-title">Connect to your Redis Instance</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="alert alert-success">Connection established! Fetching data...</div>
+                    <div class="alert alert-danger"></div>
+                    <p class="text-muted"><small><b>Note: </b>No credentials are persisted on the server</small></p>
+                    <form id="conn_form" role="form">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <label>Host</label>
+                                    <input type="text" id="conn_host" name="conn_host" class="form-control" placeholder="e.g. yourapp.9554.servers.com" />
+                                </div>
+                                <div class="col-sm-3">
+                                    <label>Port</label>
+                                    <input type="text" id="conn_port" name="conn_port" class="form-control" placeholder="e.g. 6379" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" id="conn_password" name="conn_password" class="form-control" />
+                        </div>
+                    </form>
+                </div>
+                <div class="panel-footer">
+                    <div class="form-group text-right">
+                        <button type="submit" id="btn_connect" class="btn btn-primary">Connect</button>
+                        <button type="button" id="btn_reset" class="btn btn-link">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid main-graphs-area">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div id="container_pie_total_tasks_across_queues" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+                </div>
+                <div class="col-sm-6">
+                    <div id="container_bar_total_tasks_across_queues" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+                </div>
+            </div><hr />
+            <div class="row">
+                <div class="col-sm-6">
+                    <div id="container_worker_jobs_histogram" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+                </div>
+                <div class="col-sm-6">
+                    <div id="container_worker_jobs_pie" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container">
+            <h1>Using Resque queues with NodeJS + Redis + Socket.io</h1>
+            <pre id="console_logs"></pre>
+            <div class="ranges-area">
+                <div class="range-single range-q1">
+                    <h4>Queue 1</h4>
+                    <input type="text" id="q1_slider_val" /><br />
+                    <input type="range" id="q1_slider" orient="vertical" value="0" min="-1" max="20" />
+                </div>
+                <div class="range-single range-q2">
+                    <h4>Queue 2</h4>
+                    <input type="text" id="q2_slider_val" /><br />
+                    <input type="range" id="q2_slider" orient="vertical" value="0" min="-1" max="20" />
+                </div>
+                <div class="range-single range-q3">
+                    <h4>Queue 3</h4>
+                    <input type="text" id="q3_slider_val" /><br />
+                    <input type="range" id="q3_slider" orient="vertical" value="0" min="-1" max="20" />
+                </div>
+                <div class="range-single range-q4">
+                    <h4>Queue 4</h4>
+                    <input type="text" id="q4_slider_val" /><br />
+                    <input type="range" id="q4_slider" orient="vertical" value="0" min="-1" max="20" />
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.6.0/socket.io.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highstock/5.0.11/highstock.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

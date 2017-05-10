@@ -1,0 +1,54 @@
+/*.container {
+    width: 960px;
+    margin: 0 auto;
+}*/
+
+#console_logs {
+    height: 300px;
+    max-height: 300px;
+    display: block;
+    overflow: auto;
+    background-color: #eaeaea;
+    padding: 0em 1em;
+}
+
+input[type=range][orient=vertical] {
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical; /* WebKit */
+    width: 8px;
+    height: 175px;
+    padding: 0 5px;
+}
+
+.ranges-area {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.range-single {
+    float: left;
+    padding: 0 7%;
+    padding-bottom: 5%;
+    margin-right: 3%;
+    text-align: center;
+}
+
+.range-single input[type=text] {
+    width: 30px;
+    margin-bottom: 1em;
+}
+
+.active {
+    background-color: #f3f3f3;
+}
+
+.panel-footer {
+    padding-top: 15px;
+    padding-bottom: 2px;
+}
+
+.alert-danger,
+.alert-success,
+.main-graphs-area {
+    display: none;
+}

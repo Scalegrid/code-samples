@@ -1,0 +1,26 @@
+{
+  "name": "socket-chat-example",
+  "version": "0.0.1",
+  "description": "my first socket.io app",
+  "dependencies": {
+    "api-error-handler": "^1.0.0",
+    "async": "^2.4.0",
+    "body-parser": "^1.15.2",
+    "express": "^4.10.2",
+    "node-resque": "^4.0.5",
+    "redis": "^2.6.3",
+    "socket.io": "^1.7.1",
+    "striptags": "^3.0.1",
+    "underscore": "^1.8.3"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
