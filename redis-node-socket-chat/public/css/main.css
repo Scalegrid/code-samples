@@ -1,0 +1,30 @@
+.container {
+    width: 777px;
+    margin: 0 auto;
+}
+
+.messages {
+    border: 1px solid darkgrey;
+    border-bottom: none;
+    width: 781px;
+    height: 240px;
+}
+
+#message {
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+.chat {
+    display: none;
+}
+
+.msg {
+    width: 100%;
+}
+
+.user {
+    float: left;
+    margin-right: 10px;
+    font-weight: bold;
+}
