@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Node.js + Socket.io + Redis Chat | ScaleGrid</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container">
+    <h1>Node.js + Socket.io + Redis Chat | ScaleGrid</h1>
+    <div class="join-chat">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"/>
+        <input type="button" id="join-chat" value="Join Chat"/>
+    </div>
+    <br/>
+    <div class="chat-info"></div>
+    <br/>
+    <div class="chat">
+        <div class="messages"></div>
+        <textarea name="message" id="message" cols="90" rows="5"
+                  placeholder="Enter your message..."></textarea><br/><br/>
+        <input type="button" id="send-message" data-username="" value="Send Message">&nbsp;
+        <input type="button" id="leave-chat" data-username="" value="Leave Chat">
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.6.0/socket.io.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
