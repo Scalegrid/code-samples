@@ -1,0 +1,22 @@
+.container {
+    width: 777px;
+    margin: 0 auto;
+}
+
+#tweets_area {
+    margin-top: 2em;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.tweet-single {
+    display: none;
+}
+
+.notice-stream-ended {
+    display: none;
+}
+
+.tweet-body {
+    cursor: pointer;
+}

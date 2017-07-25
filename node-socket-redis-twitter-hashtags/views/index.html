@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Caching tweets with Node.js + Redis + Socket.io - ScaleGrid</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header"><h2>Caching tweets with Node.js + Redis + Socket.io</h2></div>
+            <div class="alert alert-info"><b>Note:</b> For demo purposes, the stream is limited and will automatically end after a set amount of time.</div>
+            <div class="alert alert-warning notice-stream-ended"><b>Stream has ended.</b> Thanks for checking out the demo. You may start the stream again.</div>
+            <div class="input-group">
+                <input type="text" class="form-control search-txt" placeholder="Search for a hashtag on Twitter..." value="#trump" />
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-success btn-search">Start streaming</button>
+                </span>
+            </div>
+            <div id="tweets_area"></div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.6.0/socket.io.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
