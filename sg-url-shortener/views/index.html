@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>URL Shortener with Node.js + MongoDB - ScaleGrid</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header"><h2>URL Shortener with Node.js + MongoDB</h2></div>
+            <form id="form_shorten" role="form">
+                <div class="input-group">
+                    <input type="url" class="form-control text-url" placeholder="Enter a URL to shorten..." value="https://google.com" />
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-success btn-shorten">Shorten</button>
+                    </span>
+                </div>
+            </form><br />
+            <div id="shorten_area" class="hide">Shortened URL: <span class="shortened-url"></span></div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
