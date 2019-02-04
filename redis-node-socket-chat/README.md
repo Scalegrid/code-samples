@@ -11,6 +11,10 @@ The original blog post can be found at the following link: [Link_Blog_Here](http
 
 The Installation process assumes that you already have the above technologies installed on your machine.
 
+## Blog Post
+
+We've written a blog post on how to get this entire process set up here: https://scalegrid.io/blog/using-redis-with-node-js-and-socket-io/
+
 ## Install
 
 Give download link here
