@@ -11,10 +11,6 @@ The original blog post can be found at the following link: [Link_Blog_Here](http
 
 The Installation process assumes that you already have the above technologies installed on your machine.
 
-## Blog Post
-
-We've written a blog post on how to get this entire process set up here: https://scalegrid.io/blog/using-redis-with-node-js-and-socket-io/
-
 ## Install
 
 Give download link here
@@ -41,6 +37,10 @@ Once that is done, you are ready to go. Remember to restart the server if you in
 
 You can also use something like [nodemon](https://nodemon.io/) to watch your files and restart the server automatically!
 
-## Demo
+## Additional Info
 
-https://node-socket-redis-chat.herokuapp.com/
+For the full blog post, check out the following link: https://scalegrid.io/blog/using-redis-with-node-js-and-socket-io/
+
+Check out a hosted version of the demo: https://node-socket-redis-chat.herokuapp.com/
+
+[Start your free 14-day trial](https://console.scalegrid.io/users/register) by creating your first Redis cluster on ScaleGrid! No credit card required.
