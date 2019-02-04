@@ -32,3 +32,11 @@ The server should start at port 8080 (default). Navigate to [http://localhost:80
 Once that is done, you are ready to go. Remember to restart the server if you intend to make any changes to the code.
 
 You can also use something like [nodemon](https://nodemon.io/) to watch your files and restart the server automatically!
+
+## Additional Info
+
+For the full blog post, check out the following link: https://scalegrid.io/blog/caching-tweets-using-node-js-redis-and-socket-io-2/
+
+Check out a hosted version of the demo: https://node-socket-redis-stream-tweet.herokuapp.com/
+
+[Start your free 14-day trial](https://console.scalegrid.io/users/register) by creating your first Redis cluster on ScaleGrid! No credit card required.
