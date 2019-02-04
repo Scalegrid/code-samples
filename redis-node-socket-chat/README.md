@@ -36,3 +36,7 @@ For that, you can uncomment the line in `index.js` that says `client.flushdb();`
 Once that is done, you are ready to go. Remember to restart the server if you intend to make any changes to the code.
 
 You can also use something like [nodemon](https://nodemon.io/) to watch your files and restart the server automatically!
+
+## Demo
+
+https://node-socket-redis-chat.herokuapp.com/
